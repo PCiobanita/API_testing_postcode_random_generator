@@ -4,12 +4,13 @@ describe Generator do
 
   before(:all) do
     # ['SE3 8PF', 'SE9 6RJ', 'B601JA', 'SW155DU', 'B601JA', 'SW155DU']
-    @postcodes_array = Generator.new.postcodes.random_array(rand(2..20))
+    @random = rand(2..20)
+    @postcodes_array = Generator.new.postcodes.random_array(@random)
 
   end
 
   it 'should have lenngth between 2 and 10' do
-    expect(@postcodes_array.length).to be_between(2,20)
+    expect(@postcodes_array.length).to eq @random
   end
   
    it 'should give an array of postcodes ' do

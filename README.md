@@ -12,5 +12,18 @@ In this project I have created a game in which the player has to avoid geometric
 ### How to download
 1. https://github.com/PCiobanita/API_testing_postcode_random_generator
 2. Follow the link, select DEV brach and clone the project.
-3. After project cloned locate the directory in change path to it in terminal.
-4. Install HTTParty, json, rspc gems
+
+## How to use the project
+*  In terminal change directory to the random generator folder
+*  In terminal run ```bundle install``` to install the gems dependencies from gemfile
+
+## How to run unit test
+*  Type rspec in terminal to run the unit tests
+
+##  How to run postcode generator
+1.  Create a lib folder in the project that requires the generator
+2.  Copy the Generator.rb and services directory into your lib folder/ create one if is not existent
+3.  Type ```require_relative 'Generator'``` in the file you one to use it from
+4.  Create a new instance of the class ```@name_of_instance = Generator.new.postcodes```
+5.  Use the instance ```@name_of_instance.generate_random_postcode``` to get one random postcode
+6.  If you want an array with multiple postcodes run ```@name_of_instance.random_array(number)```, replace number argument to the number of postcodes you want the array to have
