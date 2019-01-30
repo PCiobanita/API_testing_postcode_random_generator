@@ -22,8 +22,8 @@ In this project I have created a game in which the player has to avoid geometric
 
 ##  How to run postcode generator
 1.  Create a lib folder in the project that requires the generator
-2.  Copy the Generator.rb and services directory into your lib folder/ create one if is not existent
-3.  Type ```require_relative 'Generator'``` in the file you one to use it from
-4.  Create a new instance of the class ```@name_of_instance = Generator.new.postcodes```
+2.  Copy the Generator.rb and services directory into your lib folder/create one if it does not exist
+3.  Type ```require_relative 'Generator'``` in the file you want to use it from
+4.  Create a new instance of the class e.g. ```@name_of_instance = Generator.new.postcodes```
 5.  Use the instance ```@name_of_instance.generate_random_postcode``` to get one random postcode
-6.  If you want an array with multiple postcodes run ```@name_of_instance.random_array(number)```, replace number argument to the number of postcodes you want the array to have
+6.  If you want an array with multiple postcodes, run ```@name_of_instance.random_array(number)```, replace the 'number' argument to the number of postcodes you want the array to have e.g. ```@name_of_instance.random_array(6)```
