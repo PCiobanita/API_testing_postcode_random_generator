@@ -1,7 +1,7 @@
 # API_testing_postcode_random_generator
 
 ### Description
-In this project I have created a game in which the player has to avoid geometrical shapes, mainly octagons. The shapes have a line missing from them and they expand from middle.
+This is a random postcode generator. It connects to postcodes.io api where it takes the random postcodes from. The data is that comes from api is tested.
 
 ### Languages used
 * Ruby
